@@ -1,0 +1,157 @@
+{
+  "private": {
+    "#logLevel": "DEBUG",
+    "logLevel": "DEBUG"
+  },
+  "httpsvr": {
+    "port": 8080
+  },
+  "base": {
+    "boxId": "BM1684-180",
+    "model": "11",
+    "snbr": "22",
+    "softVer": "33",
+    "algoVer": "44"
+  },
+  "ntp": {
+    "used": false,
+    "ip": "192.168.1.10"
+  },
+  "mqtt": {
+    "ip": "192.168.1.10",
+    "port": 1883,
+    "user": "admin",
+    "password": "21232f297a57a5a743894a0e4a801fc3",
+    "topic": "ai.event"
+  },
+  "camera_info": [
+    {
+      "devid": 0,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.64:554/av0_0",
+        "chan_num": 1,
+        "ptzType": 1,
+        "algSensitivity": 0.5,
+        "vqaSensitivity": 0.8,
+        "retentionTime": 3,
+        "alarmDelayedTime": 5,
+        "objectSize": 300,
+        "frameNbr": 10,
+        "imgType": 1,
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 1,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.65:554/av0_0",
+        "chan_num": 2,
+        "ptzType": 1,
+        "algSensitivity": 0.5,
+        "vqaSensitivity": 0.8,
+        "retentionTime": 3,
+        "alarmDelayedTime": 5,
+        "objectSize": 300,
+        "frameNbr": 10,
+        "imgType": 1,
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 2,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.66:554/av0_0",
+        "chan_num": 3,
+        "ptzType": 1,
+        "algSensitivity": 0.5,
+        "vqaSensitivity": 0.8,
+        "retentionTime": 3,
+        "alarmDelayedTime": 5,
+        "objectSize": 300,
+        "frameNbr": 10,
+        "imgType": 1,
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 4,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.67:554/av0_0",
+        "chan_num": 4,
+        "ptzType": 1,
+        "algSensitivity": 0.5,
+        "vqaSensitivity": 0.8,
+        "retentionTime": 3,
+        "alarmDelayedTime": 5,
+        "objectSize": 300,
+        "frameNbr": 10,
+        "imgType": 1,
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    }
+  ],
+  "guard": {
+    "startTime": "00:00",
+    "endTime": "23:59"
+  },
+  "algVersionPath": "/data/algversion",
+  "exeAlgPath": "/data/exeAlg",
+  "detectModelPath": "/data/exeAlg/detect.bmodel",
+  "classifyModelPath": "/data/exeAlg/resnet50.bmodel",
+  "snapshotPath": "/data/shot",
+  "alarmImagePath": "/data/alarm",
+  "softUpdatePath": "/data/updateBin",
+  "algoUpdatePath": "/data/updateModel",
+  "channelStatusPath": "/data/channelStatus",
+  "nginxPath": "/usr/local/nginx/html",
+  "nginxImgPath": "images/snapshot"
+}
+

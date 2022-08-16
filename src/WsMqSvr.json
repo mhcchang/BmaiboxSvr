@@ -1,0 +1,147 @@
+{
+  "private": {
+    "#logLevel": "DEBUG",
+    "logLevel": "DEBUG"
+  },
+  "httpsvr": {
+    "port": 8080
+  },
+  "base": {
+    "boxId": "BM1684-180",
+    "model": "boxmodel",
+    "snbr": "snbr",
+    "softVer": "softVer",
+    "algoVer": "algoVer"
+  },
+  "ntp": {
+    "used": false,
+    "ip": "192.168.1.10"
+  },
+  "mqtt": {
+    "ip": "192.168.1.10",
+    "port": 1883,
+    "user": "admin",
+    "password": "21232f297a57a5a743894a0e4a801fc3",
+    "topic": "ai.event"
+  },
+
+  "camera_info": [
+    {
+      "devid": 0,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.64:554/av0_0",
+        "chan_num": 1,
+        "ptzType": 1,
+        "imgType": 1,
+        "algSensitivity": 0.5, //算法灵敏度0-1
+        "vqaSensitivity": 0.8, //图像质量灵敏度0.5-1
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 1,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.65:554/av0_0",
+        "chan_num": 1,
+        "ptzType": 1,
+        "imgType": 1,
+        "algSensitivity": 0.5, //算法灵敏度0-1
+        "vqaSensitivity": 0.8, //图像质量灵敏度0.5-1
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 2,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.66:554/av0_0",
+        "chan_num": 1,
+        "ptzType": 1,
+        "imgType": 1,
+        "algSensitivity": 0.5, //算法灵敏度0-1
+        "vqaSensitivity": 0.8, //图像质量灵敏度0.5-1
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    },
+    {
+      "devid": 4,
+      "cameras": {
+        "address": "rtsp://admin:Cas123456@192.168.1.67:554/av0_0",
+        "chan_num": 1,
+        "ptzType": 1,
+        "imgType": 1,
+        "algSensitivity": 0.5, //算法灵敏度0-1
+        "vqaSensitivity": 0.8, //图像质量灵敏度0.5-1
+        "name": "",
+        "width": 1920,
+        "height": 1080,
+        "rois": [
+          {
+            "roiId": 1,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          },
+          {
+            "roiId": 2,
+            "points": [ 0.05, 0.05, 0.95, 0.05, 0.95, 0.95, 0.05, 0.95 ]
+          }
+        ]
+      }
+    }
+  ],
+  "guard": {
+    "startTime": "00:00",
+    "endTime": "23:59"
+  },
+  "algVersionPath": "/data/algversion",
+  "detectModelPath": "/data/modelPath/detect.bmodel",
+  "classifyModelPath": "/data/modelPath/resnet50.bmodel",
+  "exeAlgPath": "/data/exeAlg", //configure.json和可执行文件放置的位置
+  "snapshotPath": "/data/shot",
+  "alarmImagePath": "/data/alarm",
+  "softUpdatePath": "/data/updateBin",
+  "algoUpdatePath": "/data/updateModel",
+  "channelStatusPath": "/data/channelStatus"
+}
+
+//  "snapshotPath": "/data/shot",
+//  "alarmImagePath": "/data/img",
+//  "softUpdatePath": "/data/updateBin",
+//  "algoUpdatePath": "/data/updateModel",
+//  "#channelStatusPath": "目录下建一个四个空文件 channel1/channel2/channel3/channel4 设备在线建一遍，掉线删掉",
+//  "channelStatusPath": "/data/channelStatus"
+//}

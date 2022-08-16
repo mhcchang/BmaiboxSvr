@@ -1,0 +1,9 @@
+{
+	"channel"：1, //摄像机通道号
+	"createTime"："ISO8601格式yyyy-MM-dd'T'HH:mm:ss.SSSzzz报警产生时间"
+	"objectType"："1-人；2-车辆；3-动物（狗、猛禽等）；4-静物（梯子）；.....",
+	"alarmType"："1-区域入侵；2-攀爬；......",
+	"confidence"："算法置信概率，格式%.2f",
+	"imageQuality"："图像质量，格式%.2f",
+	"snapshotUrl"："报警截图地址，/data/img/alarm_202207010_0085.jpg"
+}

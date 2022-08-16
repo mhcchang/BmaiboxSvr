@@ -1,0 +1,52 @@
+{
+  "private": {
+    "#logLevel": "DEBUG",
+    "logLevel": "DEBUG"
+  },
+  "httpsvr": {
+    "port": 8080
+  },
+  "base": {
+    "boxId": "BM1684-180",
+    "model": "盒子型号",
+    "snbr": "盒子序列号",
+    "softVer": "盒子固件版本号",
+    "algoVer": "盒子算法（模型）版本号"
+  },
+  "ntp": {
+    "used": false,
+    "ip": "192.168.1.10"
+  },
+  "mqtt": {
+    "ip": "192.168.1.10",
+    "port": 1883,
+    "user": "admin",
+    "password": "21232f297a57a5a743894a0e4a801fc3",
+    "topic": "ai.event"
+  },
+  "cameras": [
+    {
+      "channel": 1,
+      "ptzType": 1,
+      "imgType": 1,
+      "name": "",
+      "rtspUrl": "192.168.1.10",
+      "rois": [
+        {
+          "roiId": 1,
+          "points": [ "x1", "y1", "x2", "y2", "..." ]
+        }
+      ]
+    }
+  ],
+  "guard": {
+    "startTime": "00:00",
+    "endTime": "23:59"
+  },
+  "snapshotPath": "/data/shot",
+  "alarmImagePath": "/data/img",
+  "softUpdatePath": "/data/updateBin",
+  "algoUpdatePath": "/data/updateModel",
+  "#channelStatusPath": "目录下建一个四个空文件 channel1/channel2/channel3/channel4 设备在线建一遍，掉线删掉",
+  "channelStatusPath": "/data/channelStatus"
+}
